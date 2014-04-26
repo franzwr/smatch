@@ -1,4 +1,4 @@
-smatch
+Smatch
 ======
 
 Organiza, busca, juega
