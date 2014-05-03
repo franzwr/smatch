@@ -18,6 +18,10 @@ gem 'coffee-rails', '~> 4.0.0'
 # gem 'therubyracer',  platforms: :ruby
 # Logeo con devise y omniauth :D
 gem 'devise'
+gem 'omniauth'
+gem 'omniauth-facebook'
+gem 'linkedin-oauth2', '~> 0.1.1'
+gem 'fb_graph'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
