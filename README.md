@@ -1,4 +1,0 @@
-Smatch
-======
-
-Organiza, busca, juega
