@@ -20,5 +20,11 @@ module Smatch
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
     config.assets.paths << Rails.root.join("app", "assets", "fonts")
+    Rails.application.config.assets.precompile += %w( jquery.js )
+    Rails.application.config.assets.precompile += %w( jquery.scrollTo.min.js )
+    Rails.application.config.assets.precompile += %w( bootstrap.min.js )
+    Rails.application.config.assets.precompile += %w( jquery.easing.1.3.js )
+    Rails.application.config.assets.precompile += %w( jquery.themepunch.revolution.min.js )
+    Rails.application.config.assets.precompile += %w( custom.js )
   end
 end
