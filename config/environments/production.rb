@@ -28,7 +28,9 @@ Rails.application.configure do
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
-
+  
+  #para hacer deploy en heroku
+  config.assets.initialize_on_precompile = false
   # Generate digests for assets URLs.
   config.assets.digest = true
 
@@ -74,7 +76,7 @@ Rails.application.configure do
 
   # Disable automatic flushing of the log to improve performance.
   # config.autoflush_log = false
-
+  config.action_mailer.default_url_options = { host: 'smatch.herokuapp.com' }
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
 

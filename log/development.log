@@ -323,3 +323,71 @@ Migrating to CreateFriends (20140510155259)
   [1m[36mFriend Load (0.3ms)[0m  [1mSELECT "friends".* FROM "friends"  WHERE "friends"."player_id" = ?[0m  [["player_id", 1]]
   [1m[35mPlayer Load (0.3ms)[0m  SELECT  "players".* FROM "players"  WHERE "players"."id" = ? LIMIT 1  [["id", 2]]
   [1m[36mFriend Load (0.3ms)[0m  [1mSELECT "friends".* FROM "friends"  WHERE "friends"."player_id" = ?[0m  [["player_id", 2]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddDeviseToPlayers (20140510173653)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "players" ADD "email" varchar(255) DEFAULT '' NOT NULL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "players" ADD "encrypted_password" varchar(255) DEFAULT '' NOT NULL
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "players" ADD "reset_password_token" varchar(255)[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "players" ADD "reset_password_sent_at" datetime
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "players" ADD "remember_created_at" datetime[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "players" ADD "sign_in_count" integer DEFAULT 0 NOT NULL
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "players" ADD "current_sign_in_at" datetime[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "players" ADD "last_sign_in_at" datetime
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "players" ADD "current_sign_in_ip" varchar(255)[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "players" ADD "last_sign_in_ip" varchar(255)
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (16.0ms)[0m  CREATE UNIQUE INDEX "index_players_on_email" ON "players" ("email")
+SQLite3::ConstraintException: indexed columns are not unique: CREATE UNIQUE INDEX "index_players_on_email" ON "players" ("email")
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddDeviseToPlayers (20140510173653)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "players" ADD "email" varchar(255) DEFAULT '' NOT NULL[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "players" ADD "encrypted_password" varchar(255) DEFAULT '' NOT NULL
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "players" ADD "reset_password_token" varchar(255)[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "players" ADD "reset_password_sent_at" datetime
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "players" ADD "remember_created_at" datetime[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "players" ADD "sign_in_count" integer DEFAULT 0 NOT NULL
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "players" ADD "current_sign_in_at" datetime[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "players" ADD "last_sign_in_at" datetime
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "players" ADD "current_sign_in_ip" varchar(255)[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "players" ADD "last_sign_in_ip" varchar(255)
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  CREATE UNIQUE INDEX "index_players_on_email" ON "players" ("email")
+SQLite3::ConstraintException: indexed columns are not unique: CREATE UNIQUE INDEX "index_players_on_email" ON "players" ("email")
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddDeviseToPlayers (20140510173653)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "players" ADD "email" varchar(255) DEFAULT '' NOT NULL[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "players" ADD "encrypted_password" varchar(255) DEFAULT '' NOT NULL
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "players" ADD "reset_password_token" varchar(255)[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "players" ADD "reset_password_sent_at" datetime
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "players" ADD "remember_created_at" datetime[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "players" ADD "sign_in_count" integer DEFAULT 0 NOT NULL
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "players" ADD "current_sign_in_at" datetime[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "players" ADD "last_sign_in_at" datetime
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "players" ADD "current_sign_in_ip" varchar(255)[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "players" ADD "last_sign_in_ip" varchar(255)
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  CREATE UNIQUE INDEX "index_players_on_email" ON "players" ("email")
+SQLite3::ConstraintException: indexed columns are not unique: CREATE UNIQUE INDEX "index_players_on_email" ON "players" ("email")
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddDeviseToPlayers (20140510173653)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "players" ADD "email" varchar(255) DEFAULT '' NOT NULL[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "players" ADD "encrypted_password" varchar(255) DEFAULT '' NOT NULL
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "players" ADD "reset_password_token" varchar(255)[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "players" ADD "reset_password_sent_at" datetime
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "players" ADD "remember_created_at" datetime[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "players" ADD "sign_in_count" integer DEFAULT 0 NOT NULL
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "players" ADD "current_sign_in_at" datetime[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "players" ADD "last_sign_in_at" datetime
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "players" ADD "current_sign_in_ip" varchar(255)[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "players" ADD "last_sign_in_ip" varchar(255)
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  CREATE UNIQUE INDEX "index_players_on_email" ON "players" ("email")
+SQLite3::ConstraintException: indexed columns are not unique: CREATE UNIQUE INDEX "index_players_on_email" ON "players" ("email")
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
