@@ -19,12 +19,24 @@ module Smatch
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
-    config.assets.paths << Rails.root.join("app", "assets", "fonts")
+    
+    config.assets.paths << Rails.root.join("app", "assets", "fonts", "stylesheets", "javascripts")
     Rails.application.config.assets.precompile += %w( jquery.js )
     Rails.application.config.assets.precompile += %w( jquery.scrollTo.min.js )
     Rails.application.config.assets.precompile += %w( bootstrap.min.js )
     Rails.application.config.assets.precompile += %w( jquery.easing.1.3.js )
     Rails.application.config.assets.precompile += %w( jquery.themepunch.revolution.min.js )
     Rails.application.config.assets.precompile += %w( custom.js )
+    Rails.application.config.assets.precompile += %w( html5shiv.js )
+    Rails.application.config.assets.precompile += %w( landing.js.coffee )
+    Rails.application.config.assets.precompile += %w( application.js )
+    Rails.application.config.assets.precompile += %w( style.css )
+    Rails.application.config.assets.precompile += %w( responsive.css )
+    Rails.application.config.assets.precompile += %w( sign-up.css )
+    Rails.application.config.assets.precompile += %w( settings.css )
+    Rails.application.config.assets.precompile += %w( font-awesome.min.css )
+    Rails.application.config.assets.precompile += %w( bootstrap.css )
+    Rails.application.config.assets.precompile += %w( bootstrap.min.css )
+    Rails.application.config.assets.precompile += %w( colors.css )
   end
 end

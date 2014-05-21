@@ -8,16 +8,17 @@
         <meta content="playlab" name="author">
          
         <!-- Bootstrap  -->
-        <link href="css/bootstrap.css" rel="stylesheet">
+        <%= stylesheet_link_tag "bootstrap" %>
+        <%= stylesheet_link_tag "bootstrap.min" %>
         <!-- Font Awesome  -->
-        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <%= stylesheet_link_tag "font-awesome.min" %>
         <!-- Revolution Responsive jQuery Slider -->
-        <link rel="stylesheet" type="text/css" href="css/settings.css" media="screen" />
+        <%= stylesheet_link_tag "settings" %>
         <!-- Landlr Style -->
-        <link href="css/colors.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
-        <link href="css/responsive.css" rel="stylesheet"> 
-         <link rel="stylesheet" href="css/sign-up.css" type="text/css" media="screen" />
+        <%= stylesheet_link_tag "colors" %>
+        <%= stylesheet_link_tag "style" %>
+        <%= stylesheet_link_tag "responsive" %>
+        <%= stylesheet_link_tag "sign-up" %>
         
         <!-- Favicon and touch icons  -->
         <link href="ico/apple-touch-icon-144-precomposed.png" rel="apple-touch-icon-precomposed" sizes="144x144">
@@ -44,8 +45,7 @@
 							<span class="icon-bar"></span>
 						</button>
 						<a class="brand" href="#">
-							<%= image_tag("images/smatch5.png", width: '200', style: 'margin-left:80px; margin-top:-8px;') %>
-							<!--<img src="images/smatch5.png" width="200" style="margin-left:80px; margin-top:-8px;">-->
+							<%= image_tag("smatch5.png", width: '200', style: 'margin-left:80px; margin-top:-8px;') %>
 						</a>
 						<div class="nav-collapse collapse">
 							<ul class="nav pull-right">
@@ -210,7 +210,7 @@
 						<div id="testimonial-slider" class="carousel slide mar-t30">
 							<ul class="carousel-indicators text-center row-fluid">
 								<li data-target="#testimonial-slider" data-slide-to="0" class="span4">
-									<div class="thumbnail  bordered full-rounded"><img class="img-circle" src="images/testimonial_1.jpg"></div>
+									<div class="thumbnail  bordered full-rounded"><%= image_tag("testimonial_1.jpg", :class => "img-circle") %></div>
 									<div class="desc">
 										<p><strong>Diego Reyes</strong><br />
 										Senior UX Designer</p>
@@ -218,7 +218,7 @@
 									<div class="arrow"></div>
 								</li>
 								<li data-target="#testimonial-slider" data-slide-to="1" class="span4">
-									<div class="thumbnail  bordered full-rounded"><img class="img-circle" src="images/testimonial_2.jpg"></div>
+									<div class="thumbnail  bordered full-rounded"><%= image_tag("testimonial_2.jpg", :class => "img-circle") %></div>
 									<div class="desc">
 										<p><strong>Cristian Valles</strong><br />
 										Jefe de Proyecto</p>
@@ -226,7 +226,7 @@
 									<div class="arrow"></div>
 								</li>
 								<li data-target="#testimonial-slider" data-slide-to="2" class="span4">
-									<div class="thumbnail bordered full-rounded"><img class="img-circle" src="images/testimonial_3.jpg"></div>
+									<div class="thumbnail bordered full-rounded"><%= image_tag("testimonial_3.jpg", :class => "img-circle") %></div>
 									<div class="desc">
 										<p><strong>Fabián Viani</strong><br />
 										General Manager</p>
@@ -234,16 +234,15 @@
 									<div class="arrow"></div>
 								</li>
 								<li data-target="#testimonial-slider" data-slide-to="3" class="span4 offset2">
-									<div class="thumbnail bordered full-rounded"><img class="img-circle" src="images/testimonial_4.jpg"></div>
+									<div class="thumbnail bordered full-rounded"><%= image_tag("testimonial_4.jpg", :class => "img-circle") %></div>
 									<div class="desc">
 										<p><strong>Rodrigo Naranjo</strong><br />
 										Back-end Developer</p>
 									</div>
 									<div class="arrow"></div>
 								</li>
-
 								<li data-target="#testimonial-slider" data-slide-to="3" class="span4">
-									<div class="thumbnail bordered full-rounded"><img class="img-circle" src="images/testimonial_4.jpg"></div>
+									<div class="thumbnail bordered full-rounded"><%= image_tag("testimonial_4.jpg", :class => "img-circle") %></div>
 									<div class="desc">
 										<p><strong>Franz Wompner</strong><br />
 										Back-end Developer</p>
@@ -341,17 +340,9 @@
 	    <%= javascript_include_tag "bootstrap.min.js" %>
 	    <%= javascript_include_tag "jquery.easing.1.3.js" %>
 	    
-	    <!--<script type="text/javascript" src="js/jquery.js"></script>
-	    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-	    <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
-	    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>-->
-	    
 	    <!-- Revolution Responsive jQuery Slider -->
 	    <%= javascript_include_tag "jquery.themepunch.revolution.min.js" %>
 	    <%= javascript_include_tag "custom.js" %>
-	    
-	    <!--<script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
-	    <script type="text/javascript" src="js/custom.js"></script>-->
 	    
     </body>
 </html>
