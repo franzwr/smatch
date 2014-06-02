@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   get 'landing/index'
 
-  devise_for :players
+  devise_for :players, controllers: { omniauth_callbacks: "players/omniauth_callbacks" }
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
