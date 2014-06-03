@@ -12,6 +12,6 @@ class Players::OmniauthCallbacksController < Devise::OmniauthCallbacksController
       #redirect_to root_path, :message => "hola", :key => :success
     end
     set_flash_message(:notice, :success, :kind => "Facebook") if is_navigational_format?
-    redirect_to destroy_player_session_path, :method => :delete
+    redirect_to destroy_player_session_path, :message => "Excelente, perro", :key => :success
   end
 end

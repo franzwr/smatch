@@ -2,7 +2,6 @@ Rails.application.routes.draw do
 
   get 'landing/index'
 
-	get 'player/sign_out' => "devise/sessions#destroy"
   devise_for :players, controllers: { omniauth_callbacks: "players/omniauth_callbacks" }
 
   # The priority is based upon order of creation: first created -> highest priority.
