@@ -13,6 +13,7 @@ class Player < ActiveRecord::Base
 				player.email = auth.info.email
 				player.first_name = auth.info.first_name
 				player.last_name = auth.info.last_name
+				player.password = Devise.friendly_token[0,20]
 			end
 		end
 end

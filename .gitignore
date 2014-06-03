@@ -14,3 +14,4 @@ log/development.log
 db/schema.rb
 *.old
 *.png
+.*.sw*
