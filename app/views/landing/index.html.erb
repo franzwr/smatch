@@ -70,8 +70,8 @@
 							<h2>Busca, organiza y Juega con Smatch</h2>
 							<h3>Arma tu partido y busca tu reciento deportivo mas cercano.</h3>
 						</hgroup>
-						<!--<a class="btn btn-large btn-tomato uppercase"  data-toggle="modal" data-target="#myModal">Suscribete</a>-->
-						<%= link_to "Suscríbete", player_omniauth_authorize_path(:facebook), class: "btn btn-large btn-tomato uppercase" %>
+						<a class="btn btn-large btn-tomato uppercase"  data-toggle="modal" data-target="#myModal">Suscribete</a>
+						<!--<%= link_to "Suscríbete", player_omniauth_authorize_path(:facebook), class: "btn btn-large btn-tomato uppercase" %>-->
 					</div>
 				</div>
 			</div>
@@ -293,9 +293,10 @@
                 <div class="span12 header">
                     <h4>Suscribete con las redes sociales o por E-mail</h4>
                     <div class="span4 social">
-                        <a href="#" class="circle facebook">
+												<%= link_to "<img src='images/face.png' alt=''>".html_safe, player_omniauth_authorize_path(:facebook), class: "circle facebook" %>
+                        <!--<a href="#" class="circle facebook">
                             <img src="images/face.png" alt="">
-                        </a>
+                        </a>-->
                          <a href="#" class="circle twitter">
                             <img src="images/twt.png" alt="">
                         </a>
