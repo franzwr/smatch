@@ -309,12 +309,19 @@
                 </div>
 
                 <div class="span12 footer">
-                    <form>
+								    <%= form_tag(player_registration_path) do %>
+												<%= email_field_tag(:player_email, nil, placeholder: "Email") %>
+												<%= password_field_tag(:player_password, nil, placeholder: "Contraseña") %>
+												<%= password_field_tag(:player_password, nil, placeholder: "Confirmar contraseña") %>
+												<%= submit_tag("Registrar") %>
+								    <% end %>
+
+                    <!--<form>
                         <input type="text" placeholder="Email">
                         <input type="password" placeholder="Contraseña">
                         <input type="password" placeholder="Confirma Contraseña">
                         <input type="submit" placeholder="Confirm Password" value="Registrar">
-                    </form>
+                    </form>-->
                 </div>
 
                 <!-- <div class="span5 remember">
