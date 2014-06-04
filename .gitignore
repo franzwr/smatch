@@ -6,12 +6,10 @@ vendor/**/*
 vendor/bundle/ruby/2.0.0/gems/therubyracer-0.12.1/lib/v8/init.bundle
 log/development.log
 db/development.sqlite3
-public/image/production/*.png
 vendor/bundle/ruby/2.0.0/gems/therubyracer-0.12.1/lib/v8/init.bundle
 *.pid
 *.sqlite3
 log/development.log
 db/schema.rb
 *.old
-*.png
 .*.sw*
