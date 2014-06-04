@@ -16,15 +16,15 @@ Rails.application.configure do
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
-    config.action_mailer.smtp_settings = {
-      :address              => "smtp.gmail.com",
-      :port                 => "587",
-      :domain               => 'gmail.com',
-      :user_name            => 'smatchcl@gmail.com',
-      :password             => 'organizabuscajuega', # plz
-      :authentication       => 'plain',
-      :enable_starttls_auto => true  
-      }
+  config.action_mailer.smtp_settings = {
+    :address              => "smtp.gmail.com",
+    :port                 => "587",
+    :domain               => 'gmail.com',
+    :user_name            => 'smatchcl@gmail.com',
+    :password             => 'organizabuscajuega', # plz
+    :authentication       => 'plain',
+    :enable_starttls_auto => true  
+  }
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
@@ -45,4 +45,6 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+  config.i18n.available_locales = ['es-CL', :es]
 end
