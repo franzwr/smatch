@@ -49,3 +49,5 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'rails-i18n'
+gem 'devise-i18n'

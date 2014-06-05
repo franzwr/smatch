@@ -6,6 +6,9 @@
 	margin-top: 50px;
 }
 
+.foto{
+	height: 200px;
+}
 
 /* ======================================================================== */
 /* ! Font
@@ -525,7 +528,7 @@ footer a {
 	to { background-position: center bottom; }
 }
 .home {
-	background: url('../images/sport3.jpg') no-repeat 100% 100%;
+	background: url('../images/fondo1.jpg') no-repeat 100% 100%;
 	background-size: 100% 100%;
 	background-attachment: fixed;
 
