@@ -9,7 +9,7 @@ class Player < ActiveRecord::Base
 		def self.find_for_facebook_oauth(auth)
 			where(auth.slice(:provider, :uid)).first_or_create do |player|
 				player.provider = auth.provider
-				player.uid = auth.uid
+				player.uid = auth.credentials.token
 				player.email = auth.info.email
 				player.first_name = auth.info.first_name
 				player.last_name = auth.info.last_name
