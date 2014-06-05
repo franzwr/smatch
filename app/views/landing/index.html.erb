@@ -289,15 +289,15 @@
                 <div class="span12 header">
                     <h4>Suscribete con las redes sociales o por E-mail</h4>
                     <div class="span4 social">
-												<%= link_to "<img src='images/face.png' alt=''>".html_safe, player_omniauth_authorize_path(:facebook), class: "circle facebook" %>
+												<%= link_to "<img src='/images/face.png' alt=''>".html_safe, player_omniauth_authorize_path(:facebook), class: "circle facebook" %>
                         <!--<a href="#" class="circle facebook">
                             <img src="images/face.png" alt="">
                         </a>-->
-                         <a href="#" class="circle twitter">
+                        <!-- <a href="#" class="circle twitter">
                             <img src="images/twt.png" alt="">
                         </a>
                          <a href="#" class="circle gplus">
-                            <img src="images/gplus.png" alt="">
+                            <img src="images/gplus.png" alt=""> -->
                         </a>
                     </div>
                 </div>
@@ -310,7 +310,7 @@
 
                 <div class="span12 footer">
 								    <%= form_tag(player_registration_path) do %>
-												<%= email_field_tag(:"player[email]", nil, placeholder: "Email") %>
+												<%= email_field_tag(:"player[email]", nil, placeholder: "Email") %> 
 												<%= password_field_tag(:"player[password]", nil, placeholder: "Contraseña") %>
 												<%= password_field_tag(:"player[password_confirmation]", nil, placeholder: "Confirmar contraseña") %>
 												<%= submit_tag("Registrar") %>
