@@ -5,6 +5,7 @@ class CreatePlayers < ActiveRecord::Migration
       t.string :last_name
       t.string :provider
       t.string :uid
+      t.text   :friend
 
       t.timestamps
     end

@@ -5,7 +5,7 @@ class Player < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable,
 		 :omniauthable, :omniauth_providers => [:facebook]
   has_many :friends, :dependent => :destroy
-
+  serialize :friend, Array
 		def self.find_for_facebook_oauth(auth)
 			where(auth.slice(:provider, :uid)).first_or_create do |player|
 				player.provider = auth.provider
