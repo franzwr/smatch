@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   devise_for :players, controllers: { omniauth_callbacks: "players/omniauth_callbacks" }
 
+  get "testing" => "landing#testing"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

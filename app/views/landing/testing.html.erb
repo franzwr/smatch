@@ -1,0 +1,27 @@
+<h1>Analizando el tiempo de carga del sitio</h1>
+<table>
+	<th>Nombre player 1</th>
+	<th>Apellido player 1</th>
+	<th>Email player 1</th>
+
+
+	<th>Nombre player 2</th>
+	<th>Apellido player 2</th>
+	<th>Email player 2</th>
+
+<% @player.friends.each do |player| %>
+	<tr>
+		<td><%= player.player.first_name%></td>
+		<td><%= player.player.last_name%></td>
+		<td><%= player.player.email%></td>
+		<td><img alt="Picture" class="media-object dp img-circle" height="100px" src="http://graph.facebook.com/10152506627779225/picture" width="100px"></td>
+
+		<td><%= player.player2.first_name%></td>
+		<td><%= player.player2.last_name%></td>
+		<td><%= player.player2.email%></td>
+
+		<td><img alt="Picture" class="media-object dp img-circle" height="100px" src="http://graph.facebook.com/10152506627779225/picture" width="100px"></td>
+	</tr>
+
+<% end %>
+</table>
