@@ -20,6 +20,16 @@ test:
   <<: *default
   database: db/test.sqlite3
 
+# PostreSQL, baby!
 production:
   <<: *default
-  database: db/production.sqlite3
+  adapter:  postgresql
+  encoding: utf8
+  database: rails_smatch
+  username: rails_smatch_user
+  password: pUbnP76iAbcJS6D2O4pkri0FJP05Ch
+  host:     localhost # for now
+  port:     5432
+  pool:     10 # chosen arbitrarily
+
+

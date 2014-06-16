@@ -13,3 +13,6 @@ log/development.log
 db/schema.rb
 *.old
 .*.sw*
+
+# production stuff
+public/assets/*
