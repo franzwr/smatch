@@ -4206,7 +4206,7 @@ a.thumbnail:focus {
 }
 .alert {
   padding: 8px 35px 8px 14px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   background-color: #fcf8e3;
   border: 1px solid #fbeed5;
@@ -4747,10 +4747,10 @@ outline: none;
   -moz-transition: opacity .3s linear, top .3s ease-out;
   -o-transition: opacity .3s linear, top .3s ease-out;
   transition: opacity .3s linear, top .3s ease-out;
-  top: -55%;
+  top: -150%;
 }
 .modal.fade.in {
-  top: 10%;
+  top: 5%;
 }
 .modal-header {
   padding: 9px 15px;
@@ -4765,7 +4765,6 @@ outline: none;
 }
 .modal-body {
   position: relative;
-  overflow-y: auto;
   max-height: 500px;
   padding: 15px;
 }

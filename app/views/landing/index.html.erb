@@ -234,7 +234,7 @@
 					<div class="span6">
 						<div class="row-fluid">
 							<div class="span2">
-								<i class="icon-rocket icon-4x"></i>
+								<i class="icon-star icon-4x"></i>
 							</div>
 							<div class="span9">
 								<h4>Busca eventos deportivos</h4>
@@ -246,7 +246,7 @@
 					<div class="span6">
 						<div class="row-fluid">
 							<div class="span2">
-								<i class="icon-retweet icon-4x"></i>
+								<i class="icon-money icon-4x"></i>
 							</div>
 							<div class="span9">
 								<h4>Cotiza recintos de deportes.</h4>
@@ -365,12 +365,12 @@
 	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 	        
 	      </div>
-	      <div class="modal-body">
+	   
 	        <div id="sign_up1">
         	<div class="container">
             <div class="row">
                 <div class="span12 header">
-                    <h4>Suscribete con las redes sociales o por E-mail</h4>
+                    <h4>Suscribete con Facebook ó por E-mail</h4>
                     <div class="span4 social">
 												<%= link_to "<img src='/images/face.png' alt=''>".html_safe, player_omniauth_authorize_path(:facebook), class: "circle facebook" %>
                         <!--<a href="#" class="circle facebook">
@@ -387,11 +387,11 @@
 
                 <div class="span3 division">
                     <div class="line l"></div>
-                    <span>o</span>
+                    <span> ó </span>
                     <div class="line r"></div>
                 </div>
 
-                <div class="span6 offset4 footer">
+                <div class="span6 offset4  offset-form footer">
 								    <%= form_tag(player_registration_path) do %>
 												<%= email_field_tag(:"player[email]", nil, placeholder: "Email",:class => "form-control") %> <br><br>
 												<%= password_field_tag(:"player[password]", nil, placeholder: "Contraseña") %> <br><br>
@@ -413,7 +413,7 @@
                     <a href="#">Forgot password?</a>
                 </div> -->
             </div>
-        </div>
+        
     </div>
 	      </div>
 	      
