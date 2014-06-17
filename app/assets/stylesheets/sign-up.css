@@ -69,8 +69,7 @@
 }
 #sign_up1 .division{
 	margin: 0 auto 50px;
-	float: none;
-	left: -6px;
+	left: 460px;
 	overflow: hidden;
 	position: relative;
 	text-align: center;
@@ -80,6 +79,9 @@
 	width: 34%;
 	top: 10px;
 	position: absolute;
+}
+.offset-form{
+	margin-left: 480px;
 }
 #sign_up1 .division .l{
 	left: 0;
@@ -106,9 +108,9 @@
 #sign_up1 .footer input[type="submit"]{
 	text-transform: uppercase;
 	color: #fff;
-	background: #187CCC;
+	background: #18CC60;
 	font-size: 15px;
-	padding: 8px 18px;
+	padding: 8px 68px;
 	border: 0 none;
 	border-radius: 3px;
 	-webkit-transition: background linear .2s, box-shadow linear .2s;

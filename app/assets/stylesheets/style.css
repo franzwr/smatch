@@ -187,7 +187,7 @@ strong {
 	padding: 60px 0;
 }
 .mini-wrapper {
-	min-height: 310px;
+	min-height: 100px;
 	position: relative;
 	padding: 60px 0 90px;
 }
@@ -471,7 +471,7 @@ footer * {
 	padding: 0;
 }
 footer {
-	background: #222a31;
+	background: #AFAFAF;
 	color: #fff;
 	padding: 20px 0;
 }
